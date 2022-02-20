@@ -1,0 +1,129 @@
+/*
+Alan Garcia
+Open Space
+february 19, 2022
+alan.garcia1135gmail.com
+
+This project is a basic game made using HTML, CSS and JavaScript.
+*/
+body {/*Set the game's background color to black*/
+    background-color: black;
+}
+
+.space {/*Set an image for space background*/
+    background-image: url("space.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10vw;
+    right: 10vw;
+}
+
+.planet-area {/*Set an area for the planet*/
+    position: absolute;
+    height: 80vh;
+    width: 40vw;
+    bottom: -3px;
+    left: -3px;
+    overflow: visible;
+}
+
+.planet {/*Set planet's position and size*/
+    position: absolute;
+    height: 75vh;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.rocket {/*Set rocket's position size and rotation*/
+    position: absolute;
+    height: 27vh;
+    width: auto;
+    bottom: 38vh;
+    left: 18vw;
+    transform: rotate(25deg);
+}
+
+.control-panel{/*Set a flexbox for our control panel, with a backgorund for style*/
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:#556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size:80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    height: 48vh;
+    width: 34vw;
+    left: 40vw;
+    bottom: 20vh;
+    z-index: 1;
+}
+
+.control-panel__inner{/*Set size, position and display for our control pannel*/
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    height: 40vh;
+    width: 30vw;
+    z-index: 1;
+}
+
+.password{/*Change letters and background and change border of password input*/
+    border-radius: 3vh;
+    border-color: blanchedalmond;
+    background-color: #222222;
+    color: antiquewhite;
+    flex-basis: auto;
+    justify-content: center;
+}
+
+.ok{/*Change letters and background and change border of ok button*/
+    border-radius: 3vh;
+    margin-left: revert;
+    border-color: aqua;
+    background-color: cornsilk;
+}
+
+.check-buttons{/*Set size and display of checkboxes*/
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    justify-content: space-around;
+}
+
+.levers {/*Set display for levers*/
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+    padding: 0;
+    height: 15vh;
+}
+
+.levers input {/*Set size and rotate levers*/
+    flex-basis: 100%;
+    width: 5vw;
+    height: 10vh;
+    margin: 0;
+    transform: rotate(-90deg);
+}
+
+.launch{/*Change background color, size and letter color of lauch button, as well as border*/
+    background-color: brown;
+    color: white;
+    border-radius: 4vh;
+    height: 10vh;
+    font-size: medium;
+}

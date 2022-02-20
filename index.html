@@ -1,0 +1,47 @@
+<!--
+Alan Garcia
+Open Space
+february 19, 2022
+alan.garcia1135gmail.com
+
+This project is a basic game made using HTML, CSS and JavaScript.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css"><!--Include CSS document-->
+    <title>Ship in Space</title>
+</head>
+<body>
+<div class="space"><!--Set a space background-->
+    <div class="planet-area"><!--Set an area where the planet and the rocket will be-->
+        <img class="planet" src="mars.png" />
+        <img id="rocket" class="rocket" src="rocket.png" />
+    </div>
+    <div class="control-panel"><!--Set an area for our control panel-->
+        <div class="control-panel__inner"><!--Our control panel includes a password input, checkboxes, levers and a launch button-->
+            <input id="password" class="password" type="password" placeholder="Enter password to unlock" />
+            <input id="ok" class="ok" type="button" value="ok">
+            <div class="check-buttons" id="checkButtons"><!--Set checkboxes to enable launch button-->
+                <input disabled class="buttons condition1" type="checkbox" name="technique" value="one"/>
+                <input disabled class="buttons condition1" type="checkbox" name="technique" value="one"/>
+                <input disabled class="buttons condition1" type="checkbox" name="technique" value="one"/>
+                <input disabled class="buttons condition1" type="checkbox" name="technique" value="one"/>
+                <input disabled class="buttons condition1" type="checkbox" name="technique" value="one"/>
+                <input disabled class="buttons condition1" type="checkbox" name="technique" value="one"/>
+            </div>
+            <div class="levers" id="leversSection"><!--Set levers to manipulate the flight-->
+                <input disabled class="buttons condition2" type="range" min="0" max="5"/>
+                <input disabled class="buttons condition2" type="range" min="0" max="5"/>
+                <input disabled class="buttons condition2" type="range" min="0" max="5"/>
+                <input disabled class="buttons condition2" type="range" min="0" max="5"/>
+            </div>
+            <input disabled class="launch" type="button" value="Launch" id="launchButton"><!--Launch button-->
+        </div>
+    </div>
+</div>
+<script src="index.js"></script><!--Include our JavaScript document-->
+</body>
+</html>
